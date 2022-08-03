@@ -12,8 +12,10 @@
 </template>
 
 <script lang='ts'>
+import { Context } from '@nuxt/types'
+
 export default {
-  async asyncData ({ $content, params, error }) {
+  async asyncData ({ $content, params, error }: Context) {
     try {
       const article = await $content('articles', params.slug).fetch()
       return { article }

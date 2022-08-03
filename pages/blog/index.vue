@@ -10,9 +10,11 @@
 </template>
 
 <script lang="ts">
+import { Context } from '@nuxt/types'
+
 export default {
   name: 'BlogIndex',
-  async asyncData ({ $content }) {
+  async asyncData ({ $content }: Context) {
     const articles = await $content('articles')
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('createdAt', 'asc')
