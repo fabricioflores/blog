@@ -3,13 +3,13 @@
     <nav>
       <ul class="default-layout__nav">
         <li class="default-layout__nav-items">
-          <router-link to="/">
+          <router-link class="default-layout__nav-item-home" to="/">
             <HomeLogo class="default-layout__logo fill-green-400 hover:fill-green-700" />
           </router-link>
-          <router-link to="/blog">
+          <router-link class="default-layout__nav-item-blog" to="/blog">
             <BlogLogo class="default-layout__logo fill-green-400 hover:fill-green-700" />
           </router-link>
-          <router-link to="/cv">
+          <router-link class="default-layout__nav-item-cv" to="/cv">
             <CvLogo class="default-layout__logo fill-green-400 hover:fill-green-700" />
           </router-link>
         </li>
@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import HomeLogo from '../assets/home.svg?inline'
-import BlogLogo from '../assets/blog.svg?inline'
-import CvLogo from '../assets/cv.svg?inline'
+import HomeLogo from '~/assets/home.svg?inline'
+import BlogLogo from '~/assets/blog.svg?inline'
+import CvLogo from '~/assets/cv.svg?inline'
 
 export default ({
   name: 'DefaultLayout',
@@ -57,7 +57,7 @@ export default ({
     width: 36px;
     height: 36px;
 
-    .nuxt-link-exact-active & {
+    .nuxt-link-exact-active &, .default-layout__nav-item-blog.nuxt-link-active & {
       fill: #15803d;
     }
   }
