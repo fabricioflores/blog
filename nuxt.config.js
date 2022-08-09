@@ -21,7 +21,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/scss/main.scss'
+    '@/assets/scss/main.scss',
+    '@/assets/scss/resources/media-queries.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -46,7 +47,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
+    '@nuxtjs/style-resources'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -54,5 +56,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  styleResources: {
+    scss: ['./assets/scss/resources/*.scss']
   }
 }

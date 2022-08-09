@@ -15,7 +15,7 @@
         </li>
       </ul>
     </nav>
-    <main class="flex items-top min-h-screen bg-gray-100 sm:pt-0">
+    <main class="bg-gray-100 p-6">
       <Nuxt />
     </main>
   </div>

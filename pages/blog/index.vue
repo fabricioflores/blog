@@ -1,11 +1,10 @@
 <template>
-  <div>
-    List of entries
-    <li v-for="article in articles" :key="article.slug">
+  <div class="blog-index">
+    <div v-for="article in articles" :key="article.slug">
       <router-link :to="`/blog/${article.slug}`">
-        {{ article.title }}
+        <BlogArticlePreview :article="article" />
       </router-link>
-    </li>
+    </div>
   </div>
 </template>
 
@@ -17,7 +16,7 @@ export default {
   async asyncData ({ $content }: Context) {
     const articles = await $content('articles')
       .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
       .fetch()
 
     return {
@@ -26,3 +25,16 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.blog-index {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  @include for-tablet-portrait-up {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
