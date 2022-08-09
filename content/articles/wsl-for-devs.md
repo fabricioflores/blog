@@ -1,6 +1,8 @@
 ---
 title: WSL for a developer environment
-description: 'Configure WSL for a developer environment, to have your Linux shell in Windows!'
+description: Configure WSL for a developer environment, to have your Linux shell in Windows!
+img: https://fabricioflores.files.wordpress.com/2021/03/image.png
+alt: WSL
 ---
 ### Brief story and why?
 
@@ -14,6 +16,7 @@ But, in a previous project in my work, they decided to give me a PC to work with
 So, my first thought was back to the origins and install Ubuntu in that PC. Problems? Yes, drivers: graphic card and trackpad. I said: Ok, no problem. I will work on this. But, was my fault. I couldn't work in a weird resolution and with a trackpad that was deciding for me where to place.
 
 So, the solution was clear: that PC will work fine only with Windows
+
 
 ### WSL
 
@@ -29,17 +32,17 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 2. Go to<a href="https://aka.ms/wslstore"> Microsoft Store</a> and choose your favourite distro. As I said, I will use Ubuntu.
 
-<figure class="wp-block-image size-large"><a href="https://fabricioflores.files.wordpress.com/2021/03/image.png"><img src="https://fabricioflores.files.wordpress.com/2021/03/image.png?w=1024" alt="" class="wp-image-396"/></a></figure>
+<img src="https://fabricioflores.files.wordpress.com/2021/03/image.png?w=1024" />
 
 Click on Get and Install it.
 
 3. After that, start Ubuntu. It will take a time to finish the installation, and the first time will ask you for a UNIX user and password.
 
-<figure class="wp-block-image size-large"><a href="https://fabricioflores.files.wordpress.com/2021/03/image-1.png"><img src="https://fabricioflores.files.wordpress.com/2021/03/image-1.png?w=979" alt="" class="wp-image-399"/></a></figure>
+<img src="https://fabricioflores.files.wordpress.com/2021/03/image-1.png?w=979"/>
 
 And now you have Linux in your Windows PC!!!
 
-<figure class="wp-block-image size-large"><a href="https://fabricioflores.files.wordpress.com/2021/03/image-2.png"><img src="https://fabricioflores.files.wordpress.com/2021/03/image-2.png?w=978" alt="" class="wp-image-401"/></a></figure>
+<img src="https://fabricioflores.files.wordpress.com/2021/03/image-2.png?w=978" />
 
 ### GIT, NODE, Angular
 
@@ -76,7 +79,7 @@ I will use the latest LTS version
 nvm install 14
 ```
 
-<figure class="wp-block-image size-large"><a href="https://fabricioflores.files.wordpress.com/2021/03/image-3.png"><img src="https://fabricioflores.files.wordpress.com/2021/03/image-3.png?w=1024" alt="" class="wp-image-405"/></a></figure>
+<img src="https://fabricioflores.files.wordpress.com/2021/03/image-3.png?w=1024" />
 
 And I will install Angular for a test project.
 
@@ -99,7 +102,7 @@ npm start
 
 Go to your browser at go to `http://localhost:4200/` and you will see your app
 
-<figure class="wp-block-image size-large"><a href="https://fabricioflores.files.wordpress.com/2021/03/image-4.png"><img src="https://fabricioflores.files.wordpress.com/2021/03/image-4.png?w=1024" alt="" class="wp-image-408"/></a></figure>
+<img src="https://fabricioflores.files.wordpress.com/2021/03/image-4.png?w=1024"/>
 
 ### VSCODE
 
