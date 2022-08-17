@@ -6,12 +6,15 @@
         <h2 class="text-2xl leading-7 font-semibold">
           Fabricio Flores
         </h2>
-        <h3>
+        <h3 class="mt-4">
           Web Developer at <a target="_blank" href="https://www.bairesdev.com/">BairesDev</a>
         </h3>
-        <div>
+        <div class="mt-4">
           <p class="text-gray-500">
             I'm a web developer based in Loja, Ecuador.
+          </p>
+          <p class="text-gray-500">
+            I like code, video games and soccer.
           </p>
           <div class="home__links">
             <a class="home__link hover:fill-green-700" target="_blank" href="https://www.linkedin.com/in/fabricio-flores/">
@@ -48,12 +51,15 @@ export default {
 <style lang="scss">
 
 .home {
-  .home__links {
+
+  &__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
   }
-  .home__link {
+
+  &__link {
     width: 36px;
     height: 36px;
     margin-right: 8px;

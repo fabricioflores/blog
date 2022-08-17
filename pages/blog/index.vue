@@ -15,7 +15,7 @@ export default {
   name: 'BlogIndex',
   async asyncData ({ $content }: Context) {
     const articles = await $content('articles')
-      .only(['title', 'description', 'img', 'slug', 'author'])
+      .only(['title', 'description', 'slug', 'createdAt', 'tags'])
       .sortBy('createdAt', 'desc')
       .fetch()
 
@@ -33,7 +33,7 @@ export default {
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     grid-template-columns: repeat(3, 1fr);
   }
 }

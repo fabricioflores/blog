@@ -3,6 +3,13 @@ title: WSL for a developer environment
 description: Configure WSL for a developer environment, to have your Linux shell in Windows!
 img: https://fabricioflores.files.wordpress.com/2021/03/image.png
 alt: WSL
+tags:
+  - linux
+  - wsl
+  - ubuntu
+  - node
+  - angular
+
 ---
 ### Brief story and why?
 

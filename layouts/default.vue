@@ -15,7 +15,10 @@
         </li>
       </ul>
     </nav>
-    <main class="bg-gray-100 p-6">
+    <main
+      class="bg-gray-100 p-6 default-layout__container"
+      :class="$route.name"
+    >
       <Nuxt />
     </main>
   </div>
@@ -59,6 +62,16 @@ export default ({
 
     .nuxt-link-exact-active &, .default-layout__nav-item-blog.nuxt-link-active & {
       fill: #15803d;
+    }
+  }
+
+  &__container {
+    height: calc(100vh - 60px);
+
+    &.index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
