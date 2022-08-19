@@ -13,8 +13,8 @@
       </div>
       <div class="cv__header__right">
         <p>Loja, Ecuador</p>
-        <p>fabrifloresg@gmail.com</p>
-        <p>github.com/fabricioflores</p>
+        <p><a href="mailto:fabrifloresg@gmail.com">fabrifloresg@gmail.com</a></p>
+        <p><a href="https://github.com/fabricioflores" target="_blank">github.com/fabricioflores</a></p>
       </div>
     </div>
     <div class="cv__skills">
@@ -175,7 +175,7 @@
             Freelance Developer
           </div>
           <div class="cv__experience__entry-date">
-            December 2012 - present
+            December 2012 - December 2013
           </div>
           <ul>
             <li>Hosting and domain configuration</li>
@@ -185,7 +185,27 @@
             <li>Design and implementation of desktop management systems</li>
             <li>Configuration and administration of Linux servers</li>
             <li>Configuration and administration of databases</li>
+            <li>Tools: Ruby on Rails, Wordpress, jQuery, Backbone.JS</li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cv__education">
+      <h3 class="cv__education-left">
+        Education
+      </h3>
+      <div class="cv__education-right">
+        <div class="cv__education__entry">
+          <div class="cv__education__entry-title">
+            Universidad Politécnica de Madrid
+          </div>
+          <div>Master's degree on Web Engineering</div>
+        </div>
+        <div class="cv__education__entry">
+          <div class="cv__education__entry-title">
+            Universidad Nacional de Loja
+          </div>
+          <div>Bachelor's degree on Computer Science</div>
         </div>
       </div>
     </div>
@@ -211,6 +231,11 @@ export default {
     display: flex;
     justify-content: space-between;
 
+  @include for-phone-and-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
     &__left, &__right {
       display: flex;
       align-items: center;
@@ -219,6 +244,14 @@ export default {
 
     &__right {
       flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      @include for-phone-and-tablet {
+        margin-top: 1rem;
+        align-items: center;
+        flex: 1;
+      }
     }
   }
 
@@ -229,8 +262,13 @@ export default {
   }
 
   &__experience,
-  &__skills {
+  &__skills,
+  &__education {
     display: flex;
+
+    @include for-phone-and-tablet {
+      flex-direction: column;
+    }
 
     &-left {
       flex: 0.3;
@@ -287,14 +325,6 @@ export default {
 
   ol {
     @apply list-decimal;
-  }
-
-  a {
-    @apply text-green-400;
-
-    &:hover {
-      @apply text-green-700;
-    }
   }
 }
 </style>
