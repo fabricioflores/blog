@@ -7,11 +7,11 @@
           Fabricio Flores
         </h2>
         <h3 class="mt-4">
-          Web Developer at <a target="_blank" href="https://www.bairesdev.com/">BairesDev</a>
+          Software Developer at <a target="_blank" href="https://www.bairesdev.com/">BairesDev</a>
         </h3>
         <div class="mt-4">
           <p class="text-gray-500">
-            I'm a web developer based in Loja, Ecuador.
+            I'm a software developer based in Loja, Ecuador.
           </p>
           <p class="text-gray-500">
             I like code, video games and soccer.

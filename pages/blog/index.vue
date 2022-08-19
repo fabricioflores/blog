@@ -22,6 +22,9 @@ export default {
     return {
       articles
     }
+  },
+  head: {
+    title: 'Fabricio Flores | Blog'
   }
 }
 </script>
