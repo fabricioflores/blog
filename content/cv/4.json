@@ -1,0 +1,24 @@
+{
+  "dates": "August 2017 - December 2018",
+  "title": "Senior Sofware Developer at <a href=\"https://www.ioet.com\">ioet</a>",
+  "activities": [
+    {
+      "title": "Team Lead Frontend Sofware Developer (January 2018 - December 2018)",
+      "activities": [
+        "data analytics web application",
+        "Angular, AngularJS, Hybrid application",
+        "Using tools as Jenkins, Docker and Kubernetes."
+      ]
+    },
+    {
+      "title": "Sofware Architect (August 2017 - December 2017)",
+      "activities": [
+        "web scrapper and UI for results",
+        "Angular, Python Scrapy library, ElasticSearch",
+        "ElasticSearch as datasource",
+        "Configuring EC2 instance for both applications with NGINX"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,22 @@
+{
+  "dates": "November 2014 - July 2016",
+  "title": "Sofware Developer at <a href=\"https://www.ioet.com\">ioet</a>",
+  "activities": [
+    {
+      "title": "Frontend Sofware Developer (November 2014 - July 2016)",
+      "activities": [
+        "data analytics web application",
+        "AngularJS application"
+      ]
+    },
+    {
+      "title": "Frontend Sofware Developer (March 2015 - July 2016)",
+      "activities": [
+        "food delivery web application",
+        "AngularJS, Angular application",
+        "We started with AngularJS, but then we migrated to TypeScript first, and then to Angular"
+      ]
+    }
+  ]
+}
+
